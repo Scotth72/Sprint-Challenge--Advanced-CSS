@@ -1,1 +1,24 @@
 // Mixins Here
+
+.btn-style(@font, @color){
+    border-radius: 15px;
+    background-color: @btn-bg-color;
+    padding: 12px;
+    color: @color;
+    font-size: @font;
+    text-align: center;
+    width: 85%;
+    @media @phone{
+        width:100%;
+      }
+}
+.btn-switch(@color, @bg-color){
+    background-color: @bg-color;
+    color: @color;
+}
+.highlight(@ani, @bg-color){
+    transition: @ani;
+    background-color: @bg-color;
+    color: @wild-sand;
+    border-radius: 15px;
+}
