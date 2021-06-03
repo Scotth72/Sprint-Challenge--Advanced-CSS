@@ -1,1 +1,26 @@
 // Navigation code here
+
+.top{
+    background-color: @nav-bg;
+    padding-top: 10px;
+    border: 1px solid @nav-border;
+}
+h1{
+    text-align: center;
+    font-size: 4.4rem;
+    padding: 10px 0 0 0;
+}//closes the h1
+nav{
+    display:flex;
+    justify-content: center;
+    font-size: 1.6rem;
+    a{
+        text-decoration: none;
+        justify-content: space-between;
+        margin: 15px;
+        color: @nav-font;
+    }//closes the a
+    a:hover{
+        .highlight(@ease-in, @btn-bg-color)
+    }
+}
